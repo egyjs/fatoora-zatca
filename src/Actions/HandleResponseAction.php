@@ -1,6 +1,6 @@
 <?php
 
-namespace Bl\FatooraZatca\Actions;
+namespace Egyjs\FatooraZatca\Actions;
 
 use Exception;
 

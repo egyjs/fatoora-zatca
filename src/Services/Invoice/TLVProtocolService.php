@@ -1,6 +1,6 @@
 <?php
 
-namespace Bl\FatooraZatca\Services\Invoice;
+namespace Egyjs\FatooraZatca\Services\Invoice;
 
 class TLVProtocolService
 {

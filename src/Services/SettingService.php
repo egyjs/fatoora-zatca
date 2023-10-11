@@ -1,10 +1,10 @@
 <?php
 
-namespace Bl\FatooraZatca\Services;
+namespace Egyjs\FatooraZatca\Services;
 
-use Bl\FatooraZatca\Services\Settings\Cert509Service;
-use Bl\FatooraZatca\Services\Settings\CnfFileService;
-use Bl\FatooraZatca\Services\Settings\KeysService;
+use Egyjs\FatooraZatca\Services\Settings\Cert509Service;
+use Egyjs\FatooraZatca\Services\Settings\CnfFileService;
+use Egyjs\FatooraZatca\Services\Settings\KeysService;
 
 class SettingService
 {

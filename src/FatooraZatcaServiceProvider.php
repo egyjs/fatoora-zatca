@@ -1,6 +1,6 @@
 <?php
 
-namespace Bl\FatooraZatca;
+namespace Egyjs\FatooraZatca;
 
 use Illuminate\Support\ServiceProvider;
 

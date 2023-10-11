@@ -1,12 +1,12 @@
 <?php
 
-namespace Bl\FatooraZatca\Services;
+namespace Egyjs\FatooraZatca\Services;
 
-use Bl\FatooraZatca\Actions\PostRequestAction;
-use Bl\FatooraZatca\Classes\DocumentType;
-use Bl\FatooraZatca\Helpers\ConfigHelper;
-use Bl\FatooraZatca\Services\Invoice\HashInvoiceService;
-use Bl\FatooraZatca\Services\Invoice\SignInvoiceService;
+use Egyjs\FatooraZatca\Actions\PostRequestAction;
+use Egyjs\FatooraZatca\Classes\DocumentType;
+use Egyjs\FatooraZatca\Helpers\ConfigHelper;
+use Egyjs\FatooraZatca\Services\Invoice\HashInvoiceService;
+use Egyjs\FatooraZatca\Services\Invoice\SignInvoiceService;
 
 class ReportInvoiceService
 {

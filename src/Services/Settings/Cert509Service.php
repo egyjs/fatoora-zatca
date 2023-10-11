@@ -1,9 +1,9 @@
 <?php
 
-namespace Bl\FatooraZatca\Services\Settings;
+namespace Egyjs\FatooraZatca\Services\Settings;
 
-use Bl\FatooraZatca\Actions\PostRequestAction;
-use Bl\FatooraZatca\Helpers\ConfigHelper;
+use Egyjs\FatooraZatca\Actions\PostRequestAction;
+use Egyjs\FatooraZatca\Helpers\ConfigHelper;
 
 class Cert509Service
 {

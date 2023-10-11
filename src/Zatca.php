@@ -1,22 +1,22 @@
 <?php
 
-namespace Bl\FatooraZatca;
+namespace Egyjs\FatooraZatca;
 
-use Bl\FatooraZatca\Classes\DocumentType;
-use Bl\FatooraZatca\Helpers\ConfigHelper;
-use Bl\FatooraZatca\Objects\Client;
-use Bl\FatooraZatca\Objects\Invoice;
-use Bl\FatooraZatca\Objects\Seller;
-use Bl\FatooraZatca\Objects\Setting;
-use Bl\FatooraZatca\Services\ReportInvoiceService;
-use Bl\FatooraZatca\Services\SettingService;
+use Egyjs\FatooraZatca\Classes\DocumentType;
+use Egyjs\FatooraZatca\Helpers\ConfigHelper;
+use Egyjs\FatooraZatca\Objects\Client;
+use Egyjs\FatooraZatca\Objects\Invoice;
+use Egyjs\FatooraZatca\Objects\Seller;
+use Egyjs\FatooraZatca\Objects\Setting;
+use Egyjs\FatooraZatca\Services\ReportInvoiceService;
+use Egyjs\FatooraZatca\Services\SettingService;
 
 class Zatca
 {
     /**
      * generate zatca setting.
      *
-     * @param  \Bl\FatooraZatca\Objects\Setting $setting
+     * @param  \Egyjs\FatooraZatca\Objects\Setting $setting
      * @return object
      */
     public static function generateZatcaSetting(Setting $setting): object
@@ -27,9 +27,9 @@ class Zatca
     /**
      * report standard invoice.
      *
-     * @param  \Bl\FatooraZatca\Objects\Setting   $seller
-     * @param  \Bl\FatooraZatca\Objects\Invoice   $invoice
-     * @param  \Bl\FatooraZatca\Objects\Client    $client
+     * @param  \Egyjs\FatooraZatca\Objects\Setting   $seller
+     * @param  \Egyjs\FatooraZatca\Objects\Invoice   $invoice
+     * @param  \Egyjs\FatooraZatca\Objects\Client    $client
      * @return array
      */
     public static function reportStandardInvoice(Seller $seller, Invoice $invoice, Client $client): array
@@ -45,9 +45,9 @@ class Zatca
     /**
      * report simplified invoice.
      *
-     * @param  \Bl\FatooraZatca\Objects\Setting   $seller
-     * @param  \Bl\FatooraZatca\Objects\Invoice   $invoice
-     * @param  \Bl\FatooraZatca\Objects\Client    $client
+     * @param  \Egyjs\FatooraZatca\Objects\Setting   $seller
+     * @param  \Egyjs\FatooraZatca\Objects\Invoice   $invoice
+     * @param  \Egyjs\FatooraZatca\Objects\Client    $client
      * @return array
      */
     public static function reportSimplifiedInvoice(Seller $seller, Invoice $invoice, Client $client = null): array
@@ -63,9 +63,9 @@ class Zatca
     /**
      * calculate simplified invoice.
      *
-     * @param  \Bl\FatooraZatca\Objects\Setting   $seller
-     * @param  \Bl\FatooraZatca\Objects\Invoice   $invoice
-     * @param  \Bl\FatooraZatca\Objects\Client    $client
+     * @param  \Egyjs\FatooraZatca\Objects\Setting   $seller
+     * @param  \Egyjs\FatooraZatca\Objects\Invoice   $invoice
+     * @param  \Egyjs\FatooraZatca\Objects\Client    $client
      * @return array
      */
     public static function calculateSimplifiedInvoice(Seller $seller, Invoice $invoice, Client $client = null): array

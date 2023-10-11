@@ -1,6 +1,6 @@
 <?php
 
-namespace Bl\FatooraZatca\Helpers;
+namespace Egyjs\FatooraZatca\Helpers;
 
 use Exception;
 

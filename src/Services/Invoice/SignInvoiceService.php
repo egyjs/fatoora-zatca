@@ -1,11 +1,11 @@
 <?php
 
-namespace Bl\FatooraZatca\Services\Invoice;
+namespace Egyjs\FatooraZatca\Services\Invoice;
 
-use Bl\FatooraZatca\Actions\GetXmlFileAction;
-use Bl\FatooraZatca\Helpers\InvoiceHelper;
-use Bl\FatooraZatca\Transformers\PriceFormat;
-use Bl\FatooraZatca\Transformers\PublicKey;
+use Egyjs\FatooraZatca\Actions\GetXmlFileAction;
+use Egyjs\FatooraZatca\Helpers\InvoiceHelper;
+use Egyjs\FatooraZatca\Transformers\PriceFormat;
+use Egyjs\FatooraZatca\Transformers\PublicKey;
 use phpseclib3\File\X509;
 
 class SignInvoiceService

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bl\FatooraZatca\Transformers;
+namespace Egyjs\FatooraZatca\Transformers;
 
 class PublicKey
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Bl\FatooraZatca\Actions;
+namespace Egyjs\FatooraZatca\Actions;
 
-use Bl\FatooraZatca\Helpers\ConfigHelper;
+use Egyjs\FatooraZatca\Helpers\ConfigHelper;
 
 class PostRequestAction
 {

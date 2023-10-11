@@ -1,11 +1,11 @@
 <?php
 
-namespace Bl\FatooraZatca\Services\Invoice;
+namespace Egyjs\FatooraZatca\Services\Invoice;
 
-use Bl\FatooraZatca\Actions\GetXmlFileAction;
-use Bl\FatooraZatca\Helpers\InvoiceHelper;
-use Bl\FatooraZatca\Objects\InvoiceItem;
-use Bl\FatooraZatca\Transformers\PriceFormat;
+use Egyjs\FatooraZatca\Actions\GetXmlFileAction;
+use Egyjs\FatooraZatca\Helpers\InvoiceHelper;
+use Egyjs\FatooraZatca\Objects\InvoiceItem;
+use Egyjs\FatooraZatca\Transformers\PriceFormat;
 
 class XmlInvoiceItemsService
 {
@@ -184,7 +184,7 @@ class XmlInvoiceItemsService
     /**
      * get the classified tax category xml content.
      *
-     * @param  \Bl\FatooraZatca\Objects\InvoiceItem    $item
+     * @param  \Egyjs\FatooraZatca\Objects\InvoiceItem    $item
      * @param  bool     $new_line
      * @return string
      */
@@ -206,7 +206,7 @@ class XmlInvoiceItemsService
     /**
      * get the discount items xml content.
      *
-     * @param  \Bl\FatooraZatca\Objects\InvoiceItem    $item
+     * @param  \Egyjs\FatooraZatca\Objects\InvoiceItem    $item
      * @param  bool     $new_line
      * @return string
      */

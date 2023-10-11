@@ -1,6 +1,6 @@
 <?php
 
-namespace Bl\FatooraZatca\Classes;
+namespace Egyjs\FatooraZatca\Classes;
 
 class PaymentType
 {

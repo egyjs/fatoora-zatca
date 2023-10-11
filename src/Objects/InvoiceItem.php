@@ -1,6 +1,6 @@
 <?php
 
-namespace Bl\FatooraZatca\Objects;
+namespace Egyjs\FatooraZatca\Objects;
 
 class InvoiceItem
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Bl\FatooraZatca\Services\Invoice;
+namespace Egyjs\FatooraZatca\Services\Invoice;
 
-use Bl\FatooraZatca\Actions\GetXmlFileAction;
-use Bl\FatooraZatca\Classes\InvoiceType;
+use Egyjs\FatooraZatca\Actions\GetXmlFileAction;
+use Egyjs\FatooraZatca\Classes\InvoiceType;
 
 class HashInvoiceService
 {

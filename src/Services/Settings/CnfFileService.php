@@ -1,8 +1,8 @@
 <?php
 
-namespace Bl\FatooraZatca\Services\Settings;
+namespace Egyjs\FatooraZatca\Services\Settings;
 
-use Bl\FatooraZatca\Helpers\ConfigHelper;
+use Egyjs\FatooraZatca\Helpers\ConfigHelper;
 
 class CnfFileService
 {

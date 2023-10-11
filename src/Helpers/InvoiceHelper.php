@@ -1,15 +1,15 @@
 <?php
 
-namespace Bl\FatooraZatca\Helpers;
+namespace Egyjs\FatooraZatca\Helpers;
 
-use Bl\FatooraZatca\Objects\InvoiceItem;
+use Egyjs\FatooraZatca\Objects\InvoiceItem;
 
 class InvoiceHelper
 {
     /**
      * calculate item sub total.
      *
-     * @param  \Bl\FatooraZatca\Objects\InvoiceItem $item
+     * @param  \Egyjs\FatooraZatca\Objects\InvoiceItem $item
      * @return float
      */
     public function calculateSubTotal(InvoiceItem $item): float
