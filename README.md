@@ -1,4 +1,5 @@
 # Fatoora Zatca
 
-If you need the documentation to use it contact me on abdelrahmangamal990@gmail.com
-and we can determine the price.
+This is a fork from [@AbdelrahmanBl](https://github.com/AbdelrahmanBl) Project ( [fatoora-zatca](https://github.com/AbdelrahmanBl/fatoora-zatca) )
+
+This project is to add more features depend on what i think
