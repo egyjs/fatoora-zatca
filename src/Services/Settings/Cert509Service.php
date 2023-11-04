@@ -135,10 +135,10 @@ class Cert509Service
     protected function getHeaders(): array
     {
         return [
-            'accept: application/json',
-            'Content-Type: application/json',
-            'otp: ' . $this->data->otp,
-            'Accept-Version: V2'
+            'Accept' => 'application/json',
+            'Content-Type'=> 'application/json',
+            'OTP' => $this->data->otp,
+            'Accept-Version' => 'V2'
         ];
     }
 

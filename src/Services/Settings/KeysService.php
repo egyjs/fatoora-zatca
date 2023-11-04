@@ -148,12 +148,12 @@ class KeysService
 
         }
 
-        // generate private key proccess.
+        // generate private key process.
         openssl_pkey_export($res, $this->privateKey , NULL, $this->config);
 
         $keyDetails = openssl_pkey_get_details($res);
 
-        // generate public key proccess.
+        // generate public key process.
         $this->publicKey = $keyDetails["key"];
     }
 

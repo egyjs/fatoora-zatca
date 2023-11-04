@@ -9,8 +9,16 @@
     },
     "authors": [
         {
+            "name": "Abdelrahman Gamal",
+            "email": "abdelrahmangamal990@gmail.com"
+        },
+        {
             "name": "AbdulRahman El-zahaby",
             "email": "el3zahaby@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.8",
+        "ext-openssl": "*"
+    }
 }

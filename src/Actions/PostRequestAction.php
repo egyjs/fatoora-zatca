@@ -3,6 +3,11 @@
 namespace Egyjs\FatooraZatca\Actions;
 
 use Egyjs\FatooraZatca\Helpers\ConfigHelper;
+use Exception;
+use Google\Cloud\Core\Exception\BadRequestException;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\GuzzleException;
 
 class PostRequestAction
 {
@@ -19,28 +24,36 @@ class PostRequestAction
     {
         $portal = ConfigHelper::portal();
 
-        $ch     = curl_init($portal . $route);
 
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $client = new Client();
+        try {
+            $response = $client->request('POST', $portal . $route, [
+                'headers' => $headers,
+                'auth' => [$USERPWD, ''],
+                'json' => $data,
+                'verify' => false,
+            ]);
+        }
+        catch (ClientException $exception) {
+            $response = $exception->getResponse();
+            $body = $response->getBody()->getContents();
+            $url = $exception->getRequest()->getUri();
 
-        if(strlen($USERPWD)) {
-            curl_setopt($ch, CURLOPT_USERPWD,  $USERPWD);
+            // cURL equivalent
+            $curlCommand = "curl -X POST -H 'Content-Type: application/json'";
+
+            foreach ($headers as $key=>  $value) {
+                $curlCommand .= " -H '$key:$value'";
+            }
+
+            $curlCommand .= " -d '".json_encode($data)."' --insecure '$url'";
+
+            dd($curlCommand,$body);
         }
 
-        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+        $httpcode = $response->getStatusCode();
 
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
-        // execute!
-        $response = curl_exec($ch);
-
-        $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-
-        $response = json_decode($response,true);
-
-        // close the connection, release resources used
-        curl_close($ch);
-
+        $response = json_decode($response->getBody(), true);
         return (new HandleResponseAction)->handle($httpcode, $response);
     }
 }
